@@ -1,0 +1,126 @@
+/* VitePress 自定义样式 */
+
+/* 导航栏样式 */
+.VPNav {
+  padding: 0 28px !important;
+}
+
+.VPNavBarTitle .VPImage {
+  height: auto !important;
+  width: 150px !important;
+}
+
+/* 首页特性样式 */
+.VPFeatures .VPFeature {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* 内容区域样式 */
+.VPContent:not(.has-sidebar) {
+  max-width: 100%;
+}
+
+/* 侧边栏样式 */
+.VPSidebarItem .text {
+  color: #454d64;
+  font-size: 16px;
+}
+
+.VPSidebarItem .link {
+  font-size: 0.9em;
+}
+
+/* 自定义块样式 */
+.custom-block.warning {
+  padding: 10px 20px;
+  border-color: #ffc11f;
+  box-shadow: 0 6px 16px -2px rgba(0, 0, 0, 0.06);
+  background: rgba(255, 229, 100, 0.1);
+}
+
+.custom-block.danger {
+  padding: 10px 20px;
+}
+
+.custom-block.danger p {
+  margin: 0;
+}
+
+.custom-block.warning p {
+  margin: 0;
+}
+
+/* 内容标题样式 */
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3,
+.vp-doc h4,
+.vp-doc h5,
+.vp-doc h6 {
+  margin-bottom: 18px;
+}
+
+.vp-doc p {
+  margin: 1em 0;
+}
+
+/* Dumi Previewer 样式 */
+.dumi-previewer {
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  margin: 16px 0;
+  overflow: hidden;
+}
+
+.dumi-previewer-demo {
+  padding: 20px;
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  overflow: auto;
+}
+
+.dumi-previewer-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 8px 16px;
+  background: #fafafa;
+  border-bottom: 1px solid #e8e8e8;
+  gap: 8px;
+}
+
+.dumi-previewer-actions__icon {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  fill: #666;
+  transition: fill 0.2s;
+}
+
+.dumi-previewer-actions__icon:hover {
+  fill: #1890ff;
+}
+
+.dumi-previewer-source {
+  overflow: auto;
+}
+
+.dumi-previewer-source .language-vue {
+  margin: 0;
+  border-radius: 0;
+}
+
+/* 响应式样式 */
+@media (max-width: 719px) {
+  .VPNavBarHamburger + .VPNavBarTitle {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 419px) {
+  .vp-doc div[class*='language-'] {
+    margin: 0;
+    border-radius: 0;
+  }
+}

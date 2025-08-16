@@ -1,0 +1,130 @@
+{
+  "hash": "9ce68e28",
+  "configHash": "ae8eb462",
+  "lockfileHash": "a9562e54",
+  "browserHash": "a00f62eb",
+  "optimized": {
+    "vue": {
+      "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "5efed3a7",
+      "needsInterop": false
+    },
+    "vitepress > @vue/devtools-api": {
+      "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
+      "file": "vitepress___@vue_devtools-api.js",
+      "fileHash": "708e4274",
+      "needsInterop": false
+    },
+    "vitepress > @vueuse/core": {
+      "src": "../../../../node_modules/@vueuse/core/index.mjs",
+      "file": "vitepress___@vueuse_core.js",
+      "fileHash": "ce812173",
+      "needsInterop": false
+    },
+    "element-plus": {
+      "src": "../../../../node_modules/element-plus/es/index.mjs",
+      "file": "element-plus.js",
+      "fileHash": "b6ab52ef",
+      "needsInterop": false
+    },
+    "copy-to-clipboard": {
+      "src": "../../../../node_modules/copy-to-clipboard/index.js",
+      "file": "copy-to-clipboard.js",
+      "fileHash": "59ae03e2",
+      "needsInterop": true
+    },
+    "codesandbox/lib/api/define": {
+      "src": "../../../../node_modules/codesandbox/lib/api/define.js",
+      "file": "codesandbox_lib_api_define.js",
+      "fileHash": "e9ee48cf",
+      "needsInterop": true
+    },
+    "escape-html": {
+      "src": "../../../../node_modules/escape-html/index.js",
+      "file": "escape-html.js",
+      "fileHash": "09fff507",
+      "needsInterop": true
+    },
+    "prismjs": {
+      "src": "../../../../node_modules/prismjs/prism.js",
+      "file": "prismjs.js",
+      "fileHash": "f6a997ad",
+      "needsInterop": true
+    },
+    "@formily/core": {
+      "src": "../../../../node_modules/@formily/core/esm/index.js",
+      "file": "@formily_core.js",
+      "fileHash": "f08e6188",
+      "needsInterop": false
+    },
+    "@formily/vue": {
+      "src": "../../../../node_modules/@formily/vue/esm/index.js",
+      "file": "@formily_vue.js",
+      "fileHash": "e6924faa",
+      "needsInterop": false
+    },
+    "@formily/reactive-vue": {
+      "src": "../../../../node_modules/@formily/reactive-vue/esm/index.js",
+      "file": "@formily_reactive-vue.js",
+      "fileHash": "77acafc4",
+      "needsInterop": false
+    },
+    "vuedraggable": {
+      "src": "../../../../node_modules/vuedraggable/dist/vuedraggable.umd.js",
+      "file": "vuedraggable.js",
+      "fileHash": "5037285d",
+      "needsInterop": true
+    },
+    "@formily/shared": {
+      "src": "../../../../node_modules/@formily/shared/esm/index.js",
+      "file": "@formily_shared.js",
+      "fileHash": "397fc734",
+      "needsInterop": false
+    },
+    "@formily/reactive": {
+      "src": "../../../../node_modules/@formily/reactive/esm/index.js",
+      "file": "@formily_reactive.js",
+      "fileHash": "7c42a5b1",
+      "needsInterop": false
+    },
+    "@formily/grid": {
+      "src": "../../../../node_modules/@formily/grid/esm/index.js",
+      "file": "@formily_grid.js",
+      "fileHash": "034e6a6c",
+      "needsInterop": false
+    },
+    "@element-plus/icons-vue": {
+      "src": "../../../../node_modules/@element-plus/icons-vue/dist/es/index.mjs",
+      "file": "@element-plus_icons-vue.js",
+      "fileHash": "8971a5f6",
+      "needsInterop": false
+    },
+    "resize-observer-polyfill": {
+      "src": "../../../../node_modules/resize-observer-polyfill/dist/ResizeObserver.es.js",
+      "file": "resize-observer-polyfill.js",
+      "fileHash": "6575051a",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-TW5XPKXM": {
+      "file": "chunk-TW5XPKXM.js"
+    },
+    "chunk-M2CWKFWZ": {
+      "file": "chunk-M2CWKFWZ.js"
+    },
+    "chunk-FNVMGS2W": {
+      "file": "chunk-FNVMGS2W.js"
+    },
+    "chunk-BXC2GHWD": {
+      "file": "chunk-BXC2GHWD.js"
+    },
+    "chunk-OJBMSGDB": {
+      "file": "chunk-OJBMSGDB.js"
+    },
+    "chunk-V4OQ3NZ2": {
+      "file": "chunk-V4OQ3NZ2.js"
+    }
+  }
+}
