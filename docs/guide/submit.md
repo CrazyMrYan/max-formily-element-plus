@@ -12,7 +12,7 @@
 
 ## API
 
-按钮相关的 API 属性，我们参考 [https://element-plus.gitee.io/zh-CN/component/button.html](https://element-plus.gitee.io/zh-CN/component/button.html) 即可，剩下是 Submit 组件独有的 API 属性
+按钮相关的 API 属性，我们参考 [https://element-plus.org/zh-CN/component/button.html](https://element-plus.org/zh-CN/component/button.html) 即可，剩下是 Submit 组件独有的 API 属性
 
 | 属性名          | 类型                                                                                             | 描述                                  | 默认值 |
 | --------------- | ------------------------------------------------------------------------------------------------ | ------------------------------------- | ------ |

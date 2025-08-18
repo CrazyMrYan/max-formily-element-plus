@@ -16,4 +16,4 @@
 
 ## API
 
-参考 [https://element-plus.gitee.io/zh-CN/component/space.html](https://element-plus.gitee.io/zh-CN/component/space.html)
+参考 [https://element-plus.org/zh-CN/component/space.html](https://element-plus.org/zh-CN/component/space.html)

@@ -36,14 +36,16 @@
 
 ## JSON Schema 远程搜索案例
 
-<dumi-previewer demoPath="guide/select/remote-method" />
+> remote-method 可以接收 `keyword`, `field`, `form` 三个参数
+> <dumi-previewer demoPath="guide/select/remote-method" />
 
 ## API
 
-参考 [https://element-plus.gitee.io/zh-CN/component/select.html](https://element-plus.gitee.io/zh-CN/component/select.html)
+参考 [https://element-plus.org/zh-CN/component/select.html](https://element-plus.org/zh-CN/component/select.html)
 
 ### 扩展属性
 
-| 属性名  | 类型                                                                                                       | 描述 | 默认值 |
-| ------- | ---------------------------------------------------------------------------------------------------------- | ---- | ------ |
-| options | [SelectOptionProps](https://element-plus.gitee.io/zh-CN/component/select.html#option-%E5%B1%9E%E6%80%A7)[] | 选项 | []     |
+| 属性名        | 类型                                                                                                  | 描述         | 默认值 |
+| ------------- | ----------------------------------------------------------------------------------------------------- | ------------ | ------ |
+| options       | [SelectOptionProps](https://element-plus.org/zh-CN/component/select.html#option-%E5%B1%9E%E6%80%A7)[] | 选项         | []     |
+| remote-method | (keyword: string, field: IField, form: IForm) => Promise<SelectOptionProps[]>                         | 远程搜索方法 | -      |

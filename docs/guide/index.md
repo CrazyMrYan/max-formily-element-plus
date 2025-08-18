@@ -75,7 +75,7 @@ $ npm install --save @formily/core @formily/vue @vue/composition-api @formily/el
 
 ## 按需打包
 
-`Element Plus` 按需引入参见 [https://element-plus.gitee.io/zh-CN/guide/quickstart.html#按需引入](https://element-plus.gitee.io/zh-CN/guide/quickstart.html#按需引入)
+`Element Plus` 按需引入参见 [https://element-plus.org/zh-CN/guide/quickstart.html#按需引入](https://element-plus.org/zh-CN/guide/quickstart.html#按需引入)
 
 ### vite
 

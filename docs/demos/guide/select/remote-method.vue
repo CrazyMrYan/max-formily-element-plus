@@ -1,6 +1,6 @@
 <template>
   <Form :form="form">
-    <SchemaField :schema="schema" :scope="{ useAsyncDataSource, loadData }" />
+    <SchemaField :schema="schema" />
     <Submit @submit="onSubmit">提交</Submit>
   </Form>
 </template>
@@ -24,53 +24,20 @@ const schema = {
         remote: true,
         filterable: true,
         remoteMethod: (value, field, form) => {
-          console.log(value, field, form)
+          field.value.dataSource = [
+            {
+              label: 'A选项',
+              value: 1,
+            },
+            {
+              label: 'B选项',
+              value: 2,
+            },
+          ]
         },
       },
     },
   },
-}
-
-const useAsyncDataSource = (service) => (field) => {
-  field.loading = true
-  service(field).then(
-    action.bound((data) => {
-      field.dataSource = data
-      field.loading = false
-    })
-  )
-}
-
-const loadData = async (field) => {
-  const linkage = field.query('linkage').get('value')
-  if (!linkage) return []
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      if (linkage === 1) {
-        resolve([
-          {
-            label: 'AAA',
-            value: 'aaa',
-          },
-          {
-            label: 'BBB',
-            value: 'ccc',
-          },
-        ])
-      } else if (linkage === 2) {
-        resolve([
-          {
-            label: 'CCC',
-            value: 'ccc',
-          },
-          {
-            label: 'DDD',
-            value: 'ddd',
-          },
-        ])
-      }
-    }, 1500)
-  })
 }
 
 const form = createForm()

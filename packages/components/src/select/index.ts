@@ -71,11 +71,15 @@ const SelectOption = defineComponent({
 
       // 封装 remote-method，将 useField 和 useForm 作为第二个和第三个参数传递
       const enhancedAttrs = { ...attrs }
-      if (attrs.remoteMethod && typeof attrs.remoteMethod === 'function') {
-        const originalRemoteMethod = attrs.remoteMethod
+
+      // 检查 remoteMethod 或 remote-method 属性
+      const remoteMethodProp = attrs.remoteMethod || attrs['remote-method']
+      if (remoteMethodProp && typeof remoteMethodProp === 'function') {
+        const originalRemoteMethod = remoteMethodProp
         enhancedAttrs.remoteMethod = (query: string) => {
           return originalRemoteMethod(query, field, form)
         }
+        enhancedAttrs['remote-method'] = enhancedAttrs.remoteMethod
       }
 
       return h(InnerSelect, enhancedAttrs, children)

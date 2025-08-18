@@ -26,7 +26,7 @@
 
 > 表格组件
 
-参考 [https://element-plus.gitee.io/zh-CN/component/card.html](https://element-plus.gitee.io/zh-CN/component/card.html)
+参考 [https://element-plus.org/zh-CN/component/card.html](https://element-plus.org/zh-CN/component/card.html)
 
 ### ArrayCards.Addition
 
@@ -40,7 +40,7 @@
 | method       | `'push' \| 'unshift'` | 添加方式 | `'push'` |
 | defaultValue | any                   | 默认值   |          |
 
-其余参考 [https://element-plus.gitee.io/zh-CN/component/button.html](https://element-plus.gitee.io/zh-CN/component/button.html)
+其余参考 [https://element-plus.org/zh-CN/component/button.html](https://element-plus.org/zh-CN/component/button.html)
 
 注意：title 属性可以接收 Field 模型中的 title 映射，也就是在 Field 上传 title 也是生效的
 
@@ -52,7 +52,7 @@
 | ------ | ------ | ---- | ------ |
 | title  | string | 文案 |        |
 
-其余参考 [https://element-plus.gitee.io/zh-CN/component/button.html](https://element-plus.gitee.io/zh-CN/component/button.html)
+其余参考 [https://element-plus.org/zh-CN/component/button.html](https://element-plus.org/zh-CN/component/button.html)
 
 注意：title 属性可以接收 Field 模型中的 title 映射，也就是在 Field 上传 title 也是生效的
 
@@ -64,7 +64,7 @@
 | ------ | ------ | ---- | ------ |
 | title  | string | 文案 |        |
 
-其余参考 [https://element-plus.gitee.io/zh-CN/component/button.html](https://element-plus.gitee.io/zh-CN/component/button.html)
+其余参考 [https://element-plus.org/zh-CN/component/button.html](https://element-plus.org/zh-CN/component/button.html)
 
 注意：title 属性可以接收 Field 模型中的 title 映射，也就是在 Field 上传 title 也是生效的
 
@@ -76,7 +76,7 @@
 | ------ | ------ | ---- | ------ |
 | title  | string | 文案 |        |
 
-其余参考 [https://element-plus.gitee.io/zh-CN/component/button.html](https://element-plus.gitee.io/zh-CN/component/button.html)
+其余参考 [https://element-plus.org/zh-CN/component/button.html](https://element-plus.org/zh-CN/component/button.html)
 
 注意：title 属性可以接收 Field 模型中的 title 映射，也就是在 Field 上传 title 也是生效的
 

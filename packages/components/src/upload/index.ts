@@ -104,7 +104,6 @@ const UploadWrapper = defineComponent({
                 style: {
                   width: '28px',
                   height: '28px',
-                  marginTop: '60px',
                   color: 'gray',
                 },
               },

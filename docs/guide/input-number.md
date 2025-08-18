@@ -16,4 +16,4 @@
 
 ## API
 
-参考 [https://element-plus.gitee.io/zh-CN/component/input-number.html](https://element-plus.gitee.io/zh-CN/component/input-number.html)
+参考 [https://element-plus.org/zh-CN/component/input-number.html](https://element-plus.org/zh-CN/component/input-number.html)

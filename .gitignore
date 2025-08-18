@@ -29,4 +29,4 @@ doc-site
 .lint-report.log
 .temp
 .cache
-docs/.vitepress/cache
+docs/.vitepress/cache/*
