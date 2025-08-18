@@ -1,0 +1,45 @@
+name: Deploy VitePress to GitHub Pages
+
+on:
+  push:
+    branches: [main]  # 在推送到 main 分支时触发
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # 允许写入内容（用于部署到 gh-pages）
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # 获取完整历史（用于生成最后更新时间）
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20  # 推荐使用 LTS 版本
+
+    - name: Install dependencies (pnpm)
+      uses: pnpm/action-setup@v2
+      with:
+        version: 8
+    - run: pnpm install --frozen-lockfile
+
+    # 如果使用 npm 替换上面两步：
+    # - name: Install dependencies (npm)
+    #   run: npm ci
+
+    - name: Build VitePress site
+      run: pnpm run build  # 确保 package.json 中有 "build": "vitepress build docs"
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: docs/.vitepress/dist  # 默认构建输出目录
+        # 如果您的项目结构不同：
+        #   VitePress 在根目录: .vitepress/dist
+        #   自定义目录: 设置正确的输出路径
+        keep_files: false  # 部署前清除 gh-pages 分支内容
