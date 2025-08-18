@@ -29,6 +29,9 @@ const SelectOption = defineComponent({
   name: 'FSelect',
   props: ['options'],
   setup(customProps, { attrs, slots }) {
+    const field = useField()
+    const form = useForm()
+
     return () => {
       const options = customProps.options || []
       const children =
@@ -65,13 +68,17 @@ const SelectOption = defineComponent({
                 }),
             }
           : slots
-      return h(
-        InnerSelect,
-        {
-          ...attrs,
-        },
-        children
-      )
+
+      // 封装 remote-method，将 useField 和 useForm 作为第二个和第三个参数传递
+      const enhancedAttrs = { ...attrs }
+      if (attrs.remoteMethod && typeof attrs.remoteMethod === 'function') {
+        const originalRemoteMethod = attrs.remoteMethod
+        enhancedAttrs.remoteMethod = (query: string) => {
+          return originalRemoteMethod(query, field, form)
+        }
+      }
+
+      return h(InnerSelect, enhancedAttrs, children)
     }
   },
 })

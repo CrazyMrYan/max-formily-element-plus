@@ -35,9 +35,9 @@ import {
   unref,
   watch,
   watchEffect,
-} from './chunk-LVCIEYGL.js'
+} from './chunk-MT5B5OAT.js'
 
-// node_modules/@vueuse/shared/index.mjs
+// node_modules/.pnpm/@vueuse+shared@12.8.2_typescript@4.9.5/node_modules/@vueuse/shared/index.mjs
 function computedEager(fn, options) {
   var _a
   const result = shallowRef()
@@ -1657,7 +1657,7 @@ function whenever(source, cb, options) {
   return stop
 }
 
-// node_modules/@vueuse/core/index.mjs
+// node_modules/.pnpm/@vueuse+core@12.8.2_typescript@4.9.5/node_modules/@vueuse/core/index.mjs
 function computedAsync(evaluationCallback, initialState, optionsOrRef) {
   let options
   if (isRef(optionsOrRef)) {
