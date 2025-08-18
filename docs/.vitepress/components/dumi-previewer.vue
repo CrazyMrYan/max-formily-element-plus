@@ -1,7 +1,7 @@
 <template>
   <!-- <client-only> -->
   <section class="dumi-previewer">
-    <div class="dumi-previewer-demo">
+    <div class="dumi-previewer-demo vp-raw">
       <template v-if="demoPath && demo">
         <component :is="demo" />
       </template>

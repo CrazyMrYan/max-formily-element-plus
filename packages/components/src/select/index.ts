@@ -1,4 +1,10 @@
-import { connect, mapProps, mapReadPretty } from '@formily/vue'
+import {
+  connect,
+  mapProps,
+  mapReadPretty,
+  useField,
+  useForm,
+} from '@formily/vue'
 import { defineComponent, h } from 'vue'
 import { PreviewText } from '../preview-text'
 

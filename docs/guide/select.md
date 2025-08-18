@@ -34,6 +34,10 @@
 
 <dumi-previewer demoPath="guide/select/scope-slot" />
 
+## JSON Schema 远程搜索案例
+
+<dumi-previewer demoPath="guide/select/remote-method" />
+
 ## API
 
 参考 [https://element-plus.gitee.io/zh-CN/component/select.html](https://element-plus.gitee.io/zh-CN/component/select.html)
