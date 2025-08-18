@@ -24,7 +24,7 @@
           class="dumi-previewer-actions__icon"
           style="color: green"
         >
-          <ArrowDown />
+          <Check />
         </el-icon>
 
         <el-icon
@@ -58,6 +58,7 @@ import {
   ArrowDown,
   ArrowUp,
   DocumentCopy,
+  Check,
   Promotion,
 } from '@element-plus/icons-vue'
 
@@ -147,8 +148,7 @@ const openCodeSandBox = () => {
     padding: 0 1em;
 
     .dumi-previewer-actions__icon {
-      width: 16px;
-      height: 16px;
+      font-size: 24px;
       padding: 8px 4px;
       opacity: 0.4;
       cursor: pointer;

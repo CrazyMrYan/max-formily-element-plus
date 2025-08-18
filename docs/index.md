@@ -2,9 +2,9 @@
 layout: home
 
 hero:
-  name: Formily Element Plus
-  text: 基于 element-plus 封装的Formily2.x组件体系
-  tagline: 更易用、更高效、更专业的表单解决方案
+  name: Max Formily Element Plus
+  text: 基于 formily element plus 的功能增强版本
+  tagline: 如果你担心 formily element plus 的维护不够及时，那么这就是你的不二选择
   actions:
     - theme: brand
       text: 组件文档
